@@ -1,0 +1,14 @@
+<aiml version="2.0" encoding = "UTF-8">
+
+    <category>
+
+        <pattern>LOAD CONVERSATION</pattern>
+        <template>
+            <!-- Load standard AIML set -->
+            <learn>conversation.aiml</learn>
+        </template>
+
+    </category>
+
+</aiml>
+    
