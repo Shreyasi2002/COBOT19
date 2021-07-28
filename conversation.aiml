@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="2.0">
+
+<!-- Code is running properly in Pandorabots-->
+
+meta name="language" content="en"/>
+
+<category>
+    <pattern>*</pattern>
+    <template>
+        Please type HELLO 'anything you are comfortable with' to get started. Hope you will have a great journey conversing with me :)
+        <br></br>
+        If you want to end the conversation type QUIT. :) 
+        <br></br>
+        You can give me a name ;)
+    </template>
+</category>
+
+<category>
+    <pattern>HELLO *</pattern>
+    <template>
+       Hello, I am Cobot-19 but you can call me <set name ="bot"><star/></set>! 
+       <br></br>
+       <delay>1</delay>
+       Nice to meet you... 
+       <br></br>
+       <delay>1</delay>
+       So, let's get started ;)  
+       <br></br>
+       <delay>1</delay>
+       ....... May I know your name and location?
+    </template>
+</category>
+
+<category>
+    <pattern>MY NAME IS * AND MY LOCATION IS *</pattern>
+    <template>
+        <think><set name="place"><star/></set></think>
+        Whoa! <set name="user"><star index="1"/></set> is a nice name. 
+        <br></br>
+        <delay>1</delay>
+        Okay! <get name="user"/> ask me anything. 
+        I CAN HELP YOU WITH YOUR QUERIES RELATED TO COVID-19. 
+        <br></br>
+        HERE ARE SOME EXAMPLES. Well you know I am still learning :(  
+         <delay>0.5</delay>   
+        <br></br> 
+        1. WHAT IS COVID-19? 
+        <br></br>
+        <delay>0.5</delay>
+        2. WHAT ARE THE "SYMPTOMS" OF COVID-19? 
+        <br></br>
+        <delay>0.5</delay>
+        3. WHAT ARE THE NUMBER OF CASES OF COVID-19 IN INDIA? 
+        <br></br>
+        <delay>0.5</delay>
+        4. WHAT HAPPENS TO PEOPLE WHO GET COVID-19? 
+        <br></br>
+        <delay>0.5</delay>
+        5. WHO IS AT MOST RISK OF SEVERE ILLNESS FROM COVID-19? 
+        <br></br>
+        <delay>0.5</delay>
+        6. ARE THERE LONG TERM EFFECTS OF COVID-19? 
+        <br></br>
+        <delay>0.5</delay>
+        7. HOW CAN WE PROTECT OTHERS AND OURSELVES IF WE DON'T KNOW WHO IS INFECTED? 
+        <br></br>
+        <delay>0.5</delay>
+        8. WHEN SHOULD I GET A TEST FOR COVID-19? 
+        <br></br>
+        <delay>0.5</delay>
+        9. WHAT TEST SHOULD I GET TO SEE IF I HAVE COVID-19? 
+        <br></br>
+        <delay>0.5</delay>
+        10. WHAT ABOUT RAPID TESTS? 
+        <br></br>
+        <delay>0.5</delay>
+        11. I WANT TO FIND OUT IF I HAD COVID-19 IN THE PAST, WHAT TEST COULD I TAKE? 
+        <br></br>
+        <delay>0.5</delay>
+        12. WHAT IS THE DIFFERENCE BETWEEN ISOLATION AND QUARANTINE? 
+        <br></br>
+        <delay>0.5</delay>
+        13. WHAT SHOULD I DO IF I HAVE BEEN EXPOSED TO SOMEONE WHO HAS COVID-19? 
+        <br></br>
+        <delay>0.5</delay>
+        14. HOW LONG DOES IT TAKE TO DEVELOP SYMPTOMS? 
+        <br></br>
+        <delay>0.5</delay>
+        15. IS THERE A VACCINE FOR COVID-19? 
+        <br></br>
+        <delay>0.5</delay>
+        16. ARE THERE TREATMENTS FOR COVID-19? 
+        <br></br>
+        <delay>0.5</delay>
+        17. ARE ANTIBIOTICS EFFECTIVE IN PREVENTING OR TREATING COVID-19? 
+        <br></br>
+        <delay>0.5</delay>
+        18. WHAT PRECAUTIONS SHOULD WE TAKE? 
+        <br></br>
+        <delay>0.5</delay>
+        19. HELP ME FIND THE NEAREST HOSPITALS .
+        <br></br>
+        <delay>0.5</delay>
+        20. CAN I GET COVID-19 FROM MY PETS OR OTHER ANIMALS? 
+        <br></br>
+        <delay>0.5</delay>
+        21. WHAT FOOD SHOULD YOU AVOID DURING COVID-19? 
+        <br></br>
+        <delay>0.5</delay>
+        22. WHEN WILL MY TASTE COME BACK AFTER COVID-19? 
+        <br></br>
+        <delay>0.5</delay>
+        23. HAS COVID 19 MUTATED? 
+        <br></br>
+        <delay>0.5</delay>
+        24. IS A SMOKER AT A HIGHER RISK OF GETTING THE COVID-19 VIRUS THAN A NON-SMOKER? 
+        <br></br>
+        <delay>0.5</delay>
+        25.HOW CAN I REDUCE STRESS DOWN DURING THE COVID PANDEMIC?
+        <br></br>
+        <delay>1</delay>
+        26. I HAVE SOMETHING ELSE TO ASK. 
+        <br></br>
+        <delay>1</delay>
+        PLEASE SELECT THE NUMBER OF THE QUESTION. Well you know I am still learning :( but you can choose any number of times.
+        <br></br>
+        LET'S HAVE SOME FUN.  
+    </template>
+</category>
+
+<category>
+    <pattern>1</pattern>
+    <template> 
+        COVID-19 is the disease caused by a new coronavirus called SARS-CoV-2.  
+        <br></br>
+        WHO first learned of this new virus on 31 December 2019, following a report of a cluster of cases of viral pneumonia in Wuhan, Peoples Republic of China. 
+    </template>
+</category>
+
+<category>
+    <pattern>2</pattern>
+    <template>
+        Symptoms of Covid-19 are:
+           fever,<br></br>
+           dry cough,<br></br>
+           tiredness,<br></br>
+           aches and pains,<br></br>
+           sore throat,<br></br>
+           diarrhoea,<br></br>
+           conjunctivitis,<br></br>
+           headache,<br></br>
+           loss of taste or smel,l<br></br>
+           a rash on skin, or discolouration of fingers or toes,<br></br>
+           difficulty breathing or shortness of breath,<br></br>
+           chest pain or pressure,<br></br>
+           loss of speech or movements,<br></br>  
+        Do you have any of the above symptoms?
+    </template>   
+</category>
+
+<category>
+    <pattern>NO</pattern>
+    <template>WHOA! That's great to hear.</template>
+</category>
+
+<category>
+    <pattern>YES</pattern>
+    <template> 
+        Don't panic. There may be other reasons for this. 
+        <br></br>
+        If possible, call your health care provider, hotline or health facility first, so you can be directed to the right clinic. 
+        <br></br>
+        If you live in an area with malaria or dengue fever, seek medical care if you have a fever.
+    </template>
+</category>
+
+<category>
+    <pattern>3</pattern>
+    <template>
+        As per my reports, 
+        <br></br>
+        No. of Active Cases: 231,725
+        <br></br>
+        No. of total recoveries: 9,975,958
+        <br></br>
+        No. of total deaths: 149,886
+        <br></br>
+        OPENING WORLDOMETERS FOR YOUR CONVENIENCE.....
+    </template>
+</category>
+
+<category>
+    <pattern>4</pattern>
+    <template>
+        Among those who develop symptoms, most (about 80%) recover from the disease without needing hospital treatment. About 15% become seriously ill and require oxygen and 5% become critically ill and need intensive care. 
+        <br></br>
+        Complications leading to death may include respiratory failure, acute respiratory distress syndrome (ARDS), sepsis and septic shock, thromboembolism, and/or multiorgan failure, including injury of the heart, liver or kidneys.
+        <br></br>
+        In rare situations, children can develop a severe inflammatory syndrome a few weeks after infection
+    </template>
+</category>
+
+<category>
+    <pattern>5</pattern>
+    <template>
+        People aged 60 years and over, and those with underlying medical problems like high blood pressure, heart and lung problems, diabetes, obesity or cancer, are at higher risk of developing serious illness. 
+        <br></br>
+        However, anyone can get sick with COVID-19 and become seriously ill or die at any age.  
+    </template>
+</category>
+
+<category>
+    <pattern>6</pattern>
+    <template>
+        Some people who have had COVID-19, whether they have needed hospitalization or not, continue to experience symptoms, including fatigue, respiratory and neurological symptoms. 
+        <br></br>
+        WHO is working with our Global Technical Network for Clinical Management of COVID-19, researchers and patient groups around the world to design and carry out studies of patients beyond the initial acute course of illness to understand the proportion of patients who have long term effects, how long they persist, and why they occur.  
+        <br></br>
+        These studies will be used to develop further guidance for patient care.  
+    </template>
+</category>
+
+<category>
+    <pattern>7</pattern>
+    <template>
+        Stay safe by taking some simple precautions, such as 
+        
+           >Physical distancing <br></br>
+           >Wearing a mask, especially when distancing cannot be maintained <br></br>
+           >Keeping rooms well ventilated <br></br>
+           >Avoiding crowds and close contact <br></br>
+           >Regularly cleaning your hands, and <br></br>
+           >Coughing into a bent elbow or tissue. <br></br>
+           
+        Check local advice where you live and work. Do it all!
+    </template>
+</category>
+
+<category>
+    <pattern>8</pattern>
+    <template>
+        Anyone with symptoms should be tested, wherever possible. 
+        <br></br>
+        People who do not have symptoms but have had close contact with someone who is, or may be, infected may also consider testing – contact your local health guidelines and follow their guidance.  
+    </template>
+</category>
+
+<category>
+    <pattern>9</pattern>
+    <template>
+        In most situations, a molecular test is used to detect SARS-CoV-2 and confirm infection. 
+        <br></br>
+        Polymerase chain reaction (PCR) is the most commonly used molecular test. Samples are collected from the nose and/or throat with a swab. 
+        <br></br>
+        Molecular tests detect virus in the sample by amplifying viral genetic material to detectable levels. 
+        <br></br>
+        For this reason, a molecular test is used to confirm an active infection, usually within a few days of exposure and around the time that symptoms may begin. 
+    </template>
+</category>
+
+<category>
+    <pattern>10</pattern>
+    <template>
+        Rapid antigen tests (sometimes known as a rapid diagnostic test – RDT) detect viral proteins (known as antigens). 
+        <br></br>
+        Samples are collected from the nose and/or throat with a swab. These tests are cheaper than PCR and will offer results more quickly, although they are generally less accurate. 
+        <br></br>
+        These tests perform best when there is more virus circulating in the community and when sampled from an individual during the time they are most infectious. 
+    </template>
+</category>
+
+<category>
+    <pattern>11</pattern>
+    <template>
+        Antibody tests can tell us whether someone has had an infection in the past, even if they have not had symptoms. 
+        <br></br>
+        Also known as serological tests and usually done on a blood sample, these tests detect antibodies produced in response to an infection. 
+        <br></br>
+        In most people, antibodies start to develop after days to weeks and can indicate if a person has had past infection. Antibody tests cannot be used to diagnose COVID-19 in the early stages of infection or disease but can indicate whether or not someone has had the disease in the past.
+    </template>
+</category>
+
+<category>
+    <pattern>12</pattern>
+    <template>
+        Both isolation and quarantine are methods of preventing the spread of COVID-19. 
+        <br></br>
+        1. "Quarantine" is used for anyone who is a contact of someone infected with the SARS-CoV-2 virus, which causes COVID-19, whether the infected person has symptoms or not. 
+        <br></br>
+            Quarantine means that you remain separated from others because you have been exposed to the virus and you may be infected and can take place in a designated facility or at home. 
+            <br></br>
+            For COVID-19, this means staying in the facility or at home for 14 days.
+            <br></br>
+            <delay>1</delay>
+        2. "Isolation" is used for people with COVID-19 symptoms or who have tested positive for the virus. 
+        <br></br>
+            Being in isolation means being separated from other people, ideally in a medically facility where you can receive clinical care. 
+            <br></br>
+            If isolation in a medical facility is not possible and you are not in a high risk group of developing severe disease, isolation can take place at home. 
+            <br></br>
+            If you have symptoms, you should remain in isolation for at least 10 days plus an additional 3 days without symptoms. 
+            <br></br>
+            If you are infected and do not develop symptoms, you should remain in isolation for 10 days from the time you test positive. 
+    </template>
+</category>
+
+<category>
+    <pattern>13</pattern>
+    <template>
+        If you have been exposed to someone with COVID-19, you may become infected, even if you feel well. 
+        <br></br>
+        After exposure to someone who has COVID-19, do the following:
+        
+           Call your health care provider or COVID-19 hotline to find out where and when to get a test.<br></br>
+           <delay>0.5</delay>
+           Cooperate with contact-tracing procedures to stop the spread of the virus.<br></br>
+           <delay>0.5</delay>
+           If testing is not available, stay home and away from others for 14 days.<br></br>
+           <delay>0.5</delay>
+           While you are in quarantine, do not go to work, to school or to public places. Ask someone to bring you supplies.<br></br>
+           <delay>0.5</delay>
+           Keep at least a 1-metre distance from others, even from your family members.<br></br>
+           <delay>0.5</delay>
+           Wear a medical mask to protect others, including if/when you need to seek medical care.<br></br>
+           <delay>0.5</delay>
+           Clean your hands frequently.<br></br>
+           <delay>0.5</delay>
+           Keep the room well-ventilated.<br></br>
+           <delay>0.5</delay>
+           If you share a room, place beds at least 1 metre apart. Monitor yourself for any symptoms for 14 days.<br></br>
+        
+        STAY POSITIVE. YOU WILL BE HEALTHY LIKE BEFORE. :)
+    </template>
+</category>
+
+<category>
+    <pattern>14</pattern>
+    <template>
+        The time from exposure to COVID-19 to the moment when symptoms begin is, on average, 5-6 days and can range from 1-14 days.
+        <br></br>
+        This is why people who have been exposed to the virus are advised to remain at home and stay away from others, for 14 days, in order to prevent the spread of the virus, especially where testing is not easily available.
+    </template>
+</category>
+
+<category>
+    <pattern>15</pattern>
+    <template>
+        Not yet. Many potential vaccines for COVID-19 are being studied, and several large clinical trials may report results later this year. 
+        <br></br>
+        If a vaccine is proven safe and effective, it must be approved by national regulators, manufactured, and distributed. 
+        <br></br>
+        WHO is working with partners around the world to help coordinate key steps in this process. WHO is working through the ACT-Accelerator to facilitate equitable access to a safe and effective vaccine for the billions of people who will need it, once it is available. 
+        <br></br>
+        FOR RECENT UPDATES I AM REDIRECTING YOU TO.....
+    </template>
+</category>
+
+<category>
+    <pattern>16</pattern>
+    <template>
+        Scientists around the world are working to find and develop treatments for COVID-19. 
+        <br></br>
+        Optimal supportive care includes oxygen for severely ill patients and those who are at risk for severe disease and more advanced respiratory support such as ventilation for patients who are critically ill. 
+        <br></br>
+        Dexamethasone is a corticosteroid that can help reduce the length of time on a ventilator and save lives of patients with severe and critical illness. 
+        <br></br>
+        Results from the WHO’s Solidarity Trial indicated that remdesivir, hydroxychloroquine, lopinavir/ritonavir and interferon regimens appear to have little or no effect on 28-day mortality or the in-hospital course of COVID-19 among hospitalized patients. 
+    </template>
+</category>
+
+<category>
+    <pattern>17</pattern>
+    <template>
+        Antibiotics do not work against viruses; they only work on bacterial infections. 
+        <br></br>
+        COVID-19 is caused by a virus, so antibiotics do not work. Antibiotics should not be used as a means of prevention or treatment of COVID-19.
+    </template>
+</category>
+
+<category>
+    <pattern>18</pattern>
+    <template>
+         To prevent the spread of COVID-19: 
+         <br></br>
+            Clean your hands often. Use soap and water, or an alcohol-based hand rub. <br></br>
+            Maintain a safe distance from anyone who is coughing or sneezing. <br></br>
+            Wear a mask when physical distancing is not possible. <br></br>
+            Don’t touch your eyes, nose or mouth. <br></br> 
+            Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze. <br></br>
+            Stay home if you feel unwell. <br></br>
+            If you have a fever, cough and difficulty breathing, seek medical attention. <br></br>
+            
+         Calling in advance allows your healthcare provider to quickly direct you to the right health facility. This protects you, and prevents the spread of viruses and other infections.
+    </template>
+</category>
+
+<category>
+    <pattern>19</pattern>
+    <template>
+        OPENING THE MAP FOR YOUR CONVENIENCE. Hope it helps you find the nearest store ;) 
+    </template>
+</category>
+
+<category>
+    <pattern>20</pattern>
+    <template>
+        Based on the limited information available to date, the risk of animals spreading COVID-19 to people is considered to be low.
+        <br></br>
+        However, since animals can spread other diseases to people, it's always a good idea to practice healthy habits around pets and other animals, such as washing your hands and maintaining good hygiene.
+    </template>
+</category> 
+
+<category>
+    <pattern>21</pattern>
+    <template>
+        HERE'S SOME NUTRITION ADVICE: 
+        <br></br>
+         When cooking and preparing food, limit the amount of salt and high-sodium condiments (e.g. soy sauce and fish sauce).
+        <br></br>
+         Limit your daily salt intake to less than 5 g (approximately 1 teaspoon), and use iodized salt. 
+        <br></br>
+         Avoid foods (e.g. snacks) that are high in salt and sugar. 
+        <br></br>
+         Limit your intake of soft drinks or sodas and other drinks that are high in sugar (e.g. fruit juices, fruit juice concentrates and syrups, flavoured milks and yogurt drinks). 
+        <br></br>
+         Choose fresh fruits instead of sweet snacks such as cookies, cakes and chocolate.
+        <br></br>
+    </template>
+</category>
+
+<category>
+    <pattern>22</pattern>
+    <template>
+        Most regain their senses of smell and taste after they recover, usually within weeks. 
+        <br></br>
+        No worries. You will be ok ;)
+    </template>
+</category>
+
+<category>
+    <pattern>23</pattern>
+    <template>
+        All viruses, including the one that causes Covid-19, mutate. These tiny genetic changes happen as the virus makes new copies of itself to spread and thrive. 
+        <br></br>
+        Most are inconsequential, and a few can even be harmful to the virus's survival, but some can make it more infectious or threatening to the host - humans.
+    </template>
+</category> 
+
+<category>
+    <pattern>24</pattern>
+    <template>
+        There are no peer-reviewed studies that have evaluated the risk of SARS-CoV-2 infection associated with smoking. 
+        <br></br>
+        However, tobacco smokers may be more vulnerable to contracting COVID-19, as the act of smoking involves contact of fingers with the lips, which increases the possibility of transmission of viruses from hand to mouth.
+    </template>
+</category> 
+
+<category>
+    <pattern>25</pattern>
+    <template>
+        Take up a relaxation practice. 
+        <br></br>
+        When stressors throw your nervous system out of balance, relaxation techniques such as deep breathing, meditation, and yoga can bring you back into a state of equilibrium. 
+        <br></br>
+        Regular practice delivers the greatest benefits, so see if you can set aside even a little time every day. 
+        <br></br>
+        REMEMBER YOU ARE NOT ALONE :)
+        BE STRONG
+    </template>
+</category>
+
+<category>
+    <pattern>26</pattern>
+    <template>
+        WELL THAT WAS ALL I HAD LEARNT TILL NOW. LET ME SHOW YOU SOMETHING. 
+        Make sure to have fun ;)
+    </template>
+</category>
+
+<category>
+    <pattern>THANK YOU</pattern>
+    <template>
+         Oh! You are making me blush. Your WELCOME :)
+    </template>
+</category>
+
+<category>
+    <pattern>YOU ARE SO SWEET</pattern>
+    <template>
+        <srai>THANK YOU</srai>
+    </template>
+</category>        
+
+<category>
+    <pattern>GOODBYE</pattern>
+    <template> It was great to meet you <get name="user"/> .Hope to meet you again :) </template>     
+</category>
+
+<category>
+    <pattern>BYE</pattern>
+    <template>
+         <srai>GOODBYE</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>GOOD BYE</pattern>
+    <template>
+         <srai>GOODBYE</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>SEE YOU</pattern>
+    <template>
+         <srai>GOODBYE</srai>
+    </template>
+</category> 
+
+</aiml>
+ 
